@@ -26,7 +26,7 @@ public class Convidado {
 		return nomeconvidado;
 	}
 
-	public void setNomeconvidado(String nomeconvidado) {
+	public void setNomeConvidado(String nomeconvidado) {
 		this.nomeconvidado = nomeconvidado;
 	}
 
