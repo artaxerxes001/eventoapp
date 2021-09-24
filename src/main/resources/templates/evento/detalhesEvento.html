@@ -14,7 +14,7 @@
 
 <body>
 	<h1>Evento</h1>
-	<h3><a class="wav.effect waves-light btn" href="/eventos">Lista de evento</a></h3>
+	<h3><a class="wav.effect waves-light btn" href="/eventos"><i class="material-icons left">format_list_bulleted</i>Lista de evento</a></h3>
 	<div th:each="evento : ${evento}" class="container">
 		<div class="row">
 		<p>Nome: <span th:text="${evento.nome}"></span></p>
@@ -22,6 +22,13 @@
 		<p>Data: <span th:text="${evento.data}"></span></p>
 		<p>Horario: <span th:text="${evento.horario}"></span></p>
 		</div>
+		
+		<form method="post">
+			Nome: <input type="text" value="" name="nomeConvidado"/>
+			Rg: <input type="text" value="" name="rg"/>
+			<button class="wav.effect waves-light btn" type="submit">Adicionar</button>
+		</form>
+		
 	</div>
 	
 
