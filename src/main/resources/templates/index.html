@@ -13,19 +13,19 @@
 </head>
 
 <body>
-	<h1>Lista de Eventos</h1>
-	<h3><a class="wav.effect waves-light btn" href="/cadastrarEvento">Cadastrar evento</a></h3>
-	
-	<!--
-		<div th:each="evento : ${eventos}">
-			<div class="row">
-			<p><a th:href="${(#mvc.url('EC#detalhesEvento').arg(0,evento.codigo)).build()}"><span th:text="${evento.nome}"></span></p>
-			<p><span th:text="${evento.local}"></span></p>
-			<p><span th:text="${evento.data}"></span></p>
-			<p><span th:text="${evento.horario}"></span></p>
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+			  <a href="#" class="brand-logo">Lista de Eventos</a>
+			  <ul >
+				<li><a href="/cadastrarEvento" class="waves-effect waves-right btn"><i class="material-icons left">add_circle_outline</i>Cadastrar Evento</a></li>
+			  </ul>
 			</div>
-		</div>
-		-->
+		  </nav>
+	</header>
+	
+	
+	
 
 	<table class="container">
 		<thead>
