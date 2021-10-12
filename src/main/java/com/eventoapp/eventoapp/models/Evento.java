@@ -3,14 +3,19 @@ package com.eventoapp.eventoapp.models;
 import java.io.Serializable;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.NotEmpty;
 
+/*
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
 import org.hibernate.validator.constraints.NotEmpty;
-
+*/
 
 @SuppressWarnings("deprecation")
 @Entity
@@ -30,8 +35,8 @@ public class Evento implements Serializable {
 	private String data;
 	@NotEmpty
 	private String horario;
-
-	@OneToMany
+	
+	@OneToMany(mappedBy = "evento", cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<Convidado> convidado;
 	
 	public long getCodigo() {

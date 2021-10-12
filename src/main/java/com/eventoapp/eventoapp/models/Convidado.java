@@ -1,9 +1,12 @@
 package com.eventoapp.eventoapp.models;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import org.hibernate.validator.constraints.NotEmpty;
+import javax.validation.constraints.NotEmpty;
+
+//import org.hibernate.validator.constraints.NotEmpty;
 
 @SuppressWarnings("deprecation")
 @Entity
