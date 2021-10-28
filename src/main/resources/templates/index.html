@@ -15,10 +15,10 @@
 <body>
 	<header>
 		<nav>
-			<div class="nav-wrapper">
-			  <a href="#" class="brand-logo">Lista de Eventos</a>
-			  <ul >
-				<li><a href="/cadastrarEvento" class="waves-effect waves-right btn"><i class="material-icons left">add_circle_outline</i>Cadastrar Evento</a></li>
+			<div class="nav-wrapper purple darken-4">
+			  <a href="#" class="brand-logo left">Lista de Eventos</a>
+			  <ul class=" right">
+				<li><a href="/cadastrarEvento" class="waves-effect waves-right btn center  green darken-4"><i class="material-icons left ">add_circle_outline</i>Cadastrar Evento</a></li>
 			  </ul>
 			</div>
 		  </nav>
@@ -45,7 +45,7 @@
 					<td><span th:text="${evento.local}"></span></td>
 					<td><span th:text="${evento.data}"></span></td>
 					<td><span th:text="${evento.horario}"></span></td>
-					<td><a class="waves-effect waves-right btn-small" th:href="${(#mvc.url('EC#deletarEvento').arg(0,evento.codigo)).build()}"><i class="material-icons left">delete</i></a></td>
+					<td><a  th:href="${(#mvc.url('EC#deletarEvento').arg(0,evento.codigo)).build()}"><i class="material-icons center">delete</i></a></td>
 			</tr>
 
 		</tbody>
