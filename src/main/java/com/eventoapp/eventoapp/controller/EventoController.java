@@ -50,7 +50,7 @@ public class EventoController {
 		return mv;
 	}
 
-	@RequestMapping(value = "/{codigo}", method = RequestMethod.GET)
+	@RequestMapping(value = "/{codigo}", method=RequestMethod.GET)
 	public ModelAndView detalhesEvento(@PathVariable("codigo") long  codigo) {
 		Evento evento = er.findByCodigo(codigo);
 		ModelAndView mv = new ModelAndView("evento/detalhesEvento");
@@ -60,10 +60,9 @@ public class EventoController {
 		return mv;
 	}
 
-	@RequestMapping(value = {"/deletarEvento"}, method = RequestMethod.GET)
+	@RequestMapping(value = {"/deletarEvento"})
 	public String deletarEvento(long codigo) {
 		Evento evento = er.findByCodigo(codigo);
-		
 		er.delete(evento);
 		return "redirect:/eventos";
 
