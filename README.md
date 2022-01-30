@@ -28,9 +28,9 @@
 Foi desenvolvido com base nos tutorias de Spring Boot do canal da <a href="https://www.youtube.com/watch?v=OHn1jLHGptw&list=PL8iIphQOyG-DHLpEx1TPItqJamy08fs1D"><strong> Michelle Brito  </strong> </a>, nele ela mostra como dar inicio a uma aplicação usando Spring Boot de forma pratica e rapida.
  </p>
  
- ---
+---
 
- <h3><a name="features"> ✅ Features </a></h3>
+<h3><a name="features"> ✅ Features </a></h3>
 
 - [x] Cadastro do Evento
 - [x] Cadastro dos convidados
@@ -54,16 +54,17 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 ---
 <h3><a name="back-end"> Rodando o Back End </a></h3>
 
+
+* Clone esse repositorio
 ```bash
-# Clone esse repositorio
 $ git clone https://github.com/artaxerxes001/eventoapp.git
+```
+* Importa o projeto no Eclipse ou Qualquer IDE da sua escolha
 
-# Importa o projeto no Eclipse ou Qualquer IDE da sua escolha
-
-# Baixe as dependencias que normalmente é feito de forma automatica quando estiver conectado a rede
+* Baixe as dependencias que normalmente é feito de forma automatica quando estiver conectado a rede
 
 # Execute o projeto clicando no botão de run aplicattion do Eclipse
-```
+
 ---
 <h3><a name="front-end"> Rodando o Front End </a></h3>
 
